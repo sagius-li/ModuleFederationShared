@@ -3,6 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "rootDir": "./projects/shared-core/src",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -14,6 +15,9 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
+    "paths": {
+      "shared-core": ["./dist/shared-core"]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022"
